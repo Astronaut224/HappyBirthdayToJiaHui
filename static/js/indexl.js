@@ -11,14 +11,14 @@ S = {
     if (i !== -1) {
       S.UI.simulate(decodeURI(action).substring(i + 3));
     } else {
-      S.UI.simulate('Hi 佳慧|祝你|生日快乐|Happy Birthday|打开声音|准备好了吗|#countdown 3||');
+      S.UI.simulate('Hi~|佳慧|祝你|生日|快乐|打开|声音|#countdown 3|');
     }
 
     S.Drawing.loop(function () {
             m++;
       S.Shape.render();
       //console.log(m);
-      if(m==1000){
+      if(m==1200){
         window.parent.postMessage({
           data: '/cake'
         }, '*');
