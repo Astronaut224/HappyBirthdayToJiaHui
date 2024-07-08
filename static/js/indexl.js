@@ -18,7 +18,7 @@ S = {
             m++;
       S.Shape.render();
       //console.log(m);
-      if(m==1200){
+      if(m==3000){
         window.parent.postMessage({
           data: '/cake'
         }, '*');
